@@ -5,9 +5,7 @@ export default function Contact() {
   return (
     <Container fluid className="contact d-flex">
       <Container
-        className="sidebar d-flex flex-column  align-items-center"
-        vertical
-      />
+        className="sidebar"/>
       <Container
         fluid
         className="contact d-flex flex-column  align-items-center justify-content-center"
