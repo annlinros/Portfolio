@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faCodepen,
@@ -43,9 +41,6 @@ export default function Home() {
             </Col>
           </Row>
         </Container>
-        {/* <Link to="/about">
-          <FontAwesomeIcon className="arrowBtn" icon={faAngleDoubleDown} />
-        </Link> */}
       </Container>
     </Container>
   );
