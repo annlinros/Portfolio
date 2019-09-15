@@ -1,38 +1,48 @@
 :root {
   --red: #c60021;
   --grey: #e3e3e3;
+  font-size: 62.5%;
 }
 body {
   background: var(--grey);
   color: #000;
 }
 .App {
-  margin: 2.2rem 0 0 2.2rem;
+  margin: 8rem 0 0 8rem;
   text-align: center;
   font-family: "Headland One", serif;
 }
 /* NAVIGATION */
 .navbar {
   background: #fff;
-  padding: 0%;
-  height: 3.4rem;
+  height: 8rem;
+  font-size: 2rem;
+  padding-right: 2rem;
 }
 .nav-link:hover {
   color: var(--red) !important;
-  border-bottom: 0.3rem solid var(--red);
 }
-
-/* HOME PAGE */
-.home {
+/* GENERAL STYLING */
+.home,
+.about,
+.contact,
+.skills,
+.projects {
   padding: 0%;
 }
-.home-sidebar {
-  width: 3.4rem;
+.sub-heading {
+  color: var(--red);
+  font-size: 5rem;
+}
+.sidebar {
+  padding: 0%;
+  width: 8rem;
   height: 100vh;
   background: #fff;
 }
+/* HOME PAGE */
 .icon {
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 2rem;
   color: #868e96;
 }
@@ -44,21 +54,106 @@ body {
   background: var(--grey);
   padding: 7rem;
 }
-.home-main h1 {
-  font-size: 4rem;
+.main-text {
+  font-size: 8em;
+}
+.sub-text-italics {
+  font-size: 1.8rem;
 }
 .sub-text {
   color: var(--red);
-  font-weight: 600;
-  font-size: 1.2rem;
+  font-weight: 400;
+  font-size: 2rem;
+}
+/* ABOUT */
+.about-me {
+  padding: 5rem;
+  text-align: justify;
+  font-size: 1.8rem;
+}
+.link {
+  color: var(--red);
+  margin: 5rem;
+  font-size: 2rem;
+}
+.link:hover {
+  color: var(--red);
+  text-decoration: none;
 }
 .arrowBtn {
   transition: transform 0.2s;
+  color: var(--red);
 }
 .arrowBtn:hover {
   background: var(--red);
   color: #fff;
   width: 1.5rem;
   padding: 0.1rem;
-  transform: scale(1.5);
+  transform: scale(1.2);
+}
+/* SKILLS PAGE */
+.skills-icon {
+  font-size: 20rem;
+  color: #868e96;
+  margin: 2.3rem;
+}
+.html {
+  color: #f16529;
+}
+.css {
+  color: #264de4;
+}
+.js {
+  color: #f0db4f;
+}
+.bootstrap {
+  color: #9933cc;
+}
+.react {
+  color: #61dbfb;
+}
+/* PROJECTS */
+.card-columns {
+  margin: 2rem;
+}
+.card {
+  margin: 3rem;
+  padding: 2.5rem;
+  width: 35rem;
+  height: 35rem;
+  box-shadow: 0 0.7rem 0.4rem -0.6rem black;
+}
+.card-img-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.project {
+  text-align: center;
+}
+.card-img-overlay {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card:hover {
+  box-shadow: none;
+}
+.card-img-overlay:hover {
+  opacity: 1;
+  background: rgb(0, 0, 0, 0.5);
+  color: #fff;
+}
+.card-link {
+  color: #fff;
+  font-weight: 800;
+  background: var(--red);
+  padding: 1rem;
+  transition: transform 0.2s;
+  border-radius: 5%;
+}
+.card-link:hover {
+  color: #fff;
+  transform: scale(1.1);
 }
