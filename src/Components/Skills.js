@@ -10,8 +10,7 @@ import {
   faReact,
   faGit,
   faGithub,
-  faNpm,
-  favscod
+  faNpm
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Skills() {
@@ -23,6 +22,7 @@ export default function Skills() {
         className="d-flex flex-column align-items-center justify-content-center"
       >
         <Row className="skills-section d-flex flex-column align-items-center justify-content-center">
+          <h1 className="section-title mb-5 align-self-start">My skills...</h1>
           <Col className="skill">
             <p className="skill-title">Languages:</p>
             <p className="skill-items">
@@ -52,9 +52,12 @@ export default function Skills() {
           <Col className="skill">
             <p className="skill-title">Version control:</p>
             <p className="skill-items">
-              <FontAwesomeIcon className="skills-icon git" icon={faGit} />{" "},
-              <FontAwesomeIcon className="skills-icon github" icon={faGithub} />{" "},
-              GitHub Desktop
+              <FontAwesomeIcon className="skills-icon git" icon={faGit} /> ,
+              <FontAwesomeIcon
+                className="skills-icon github"
+                icon={faGithub}
+              />{" "}
+              , GitHub Desktop
             </p>
           </Col>
           <Col className="skill">
