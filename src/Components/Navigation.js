@@ -4,7 +4,7 @@ import { Nav, Navbar } from "react-bootstrap";
 
 export default function Navigation() {
   return (
-    <Navbar className="navbar" collapseOnSelect expand="lg">
+    <Navbar collapseOnSelect expand="lg">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
@@ -13,6 +13,9 @@ export default function Navigation() {
           </Nav.Link>
           <Nav.Link as={Link} to="/about">
             About
+          </Nav.Link>
+          <Nav.Link as={Link} to="/skills">
+            Skills
           </Nav.Link>
           <Nav.Link as={Link} to="/projects">
             Projects
