@@ -23,12 +23,12 @@ export default function About() {
             all the automation job offers. <br></br>
             <br></br>Then as I was thinking about my next options, a friend of
             mine, who is a software developer, told me about the rising
-            oppurtunities in software programming field. I figured since I like
+            opportunities in software programming field. I figured since I like
             programming electronics machines, I might also like coding. I went
             home and as I researched I was clear, Javascript is the language I
             want to learn and web development is the direction I want to go.{" "}
             <br></br>
-            <br></br>And ever since I created my first plain html page, I wanted
+            <br></br>And ever since I created my first simple html page, I wanted
             to learn more...
           </Col>
         </Row>
