@@ -10,7 +10,7 @@ import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 export default function Home() {
   return (
     <Container fluid className="home d-flex">
-      <Navbar className="sidebar">
+      <Navbar className="sidebar d-flex justify-content-center">
         <Nav className="d-flex flex-column  align-items-center">
           <Nav.Link href="https://github.com/annlinros" target="_blanc">
             <FontAwesomeIcon className="icon" icon={faGithub} />
@@ -28,7 +28,7 @@ export default function Home() {
       </Navbar>
       <Container
         fluid
-        className="main d-flex flex-column align-items-center justify-content-center"
+        className="home-main d-flex flex-column align-items-center justify-content-center"
       >
         <Container>
           <Row>
