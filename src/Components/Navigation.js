@@ -8,19 +8,19 @@ export default function Navigation() {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ml-auto">
-          <Nav.Link as={Link} to="/">
+          <Nav.Link eventKey="1" as={Link} to="/">
             Home
           </Nav.Link>
-          <Nav.Link as={Link} to="/about">
+          <Nav.Link eventKey="1" as={Link} to="/about">
             About
           </Nav.Link>
-          <Nav.Link as={Link} to="/skills">
+          <Nav.Link eventKey="1" as={Link} to="/skills">
             Skills
           </Nav.Link>
-          <Nav.Link as={Link} to="/projects">
+          <Nav.Link eventKey="1" as={Link} to="/projects">
             Projects
           </Nav.Link>
-          <Nav.Link as={Link} to="/contact">
+          <Nav.Link eventKey="1" as={Link} to="/contact">
             Contact
           </Nav.Link>
         </Nav>
