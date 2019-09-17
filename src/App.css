@@ -17,11 +17,19 @@ body {
   background: #fff;
   height: 8rem;
   font-size: 2rem;
-  padding-right: 2rem;
+  padding: 0%;
+  z-index: 1;
+}
+.navbar-toggler {
+  margin: 2rem;
+}
+#responsive-navbar-nav {
+  background: #fff;
 }
 .nav-link:hover {
   color: var(--red) !important;
 }
+
 /* GENERAL STYLING */
 .home,
 .about,
@@ -30,15 +38,19 @@ body {
 .projects {
   padding: 0%;
 }
-.sub-heading {
-  color: var(--red);
-  font-size: 5rem;
-}
 .sidebar {
   padding: 0%;
   width: 8rem;
   height: 100vh;
   background: #fff;
+}
+.sub-heading {
+  color: var(--red);
+  font-size: 5rem;
+}
+.section-title {
+  color: var(--red);
+  font-size: 3.8rem;
 }
 /* HOME PAGE */
 .icon {
@@ -70,33 +82,9 @@ body {
   padding: 5rem;
   text-align: justify;
   font-size: 1.8rem;
-}
-.link {
-  color: var(--red);
-  margin: 5rem;
-  font-size: 2rem;
-}
-.link:hover {
-  color: var(--red);
-  text-decoration: none;
-}
-.arrowBtn {
-  transition: transform 0.2s;
-  color: var(--red);
-}
-.arrowBtn:hover {
-  background: var(--red);
-  color: #fff;
-  width: 1.5rem;
-  padding: 0.1rem;
-  transform: scale(1.2);
+  margin: 0%;
 }
 /* SKILLS PAGE */
-.skills-icon {
-  font-size: 20rem;
-  color: #868e96;
-  margin: 2.3rem;
-}
 .html {
   color: #f16529;
 }
@@ -112,10 +100,30 @@ body {
 .react {
   color: #61dbfb;
 }
-/* PROJECTS */
-.card-columns {
-  margin: 2rem;
+.npm {
+  color: #c60021;
 }
+.skills-icon {
+  font-size: 3rem;
+}
+.skill {
+  text-align: left;
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 1.8rem;
+  transition: transform 0.1s;
+}
+.skill:hover {
+  transform: scale(1.02);
+}
+.skill-title {
+  color: var(--red);
+  font-size: 2rem;
+}
+.skill-items {
+  font-size: 1.8rem;
+}
+/* PROJECTS */
 .card {
   margin: 3rem;
   padding: 2.5rem;
@@ -133,27 +141,136 @@ body {
 }
 .card-img-overlay {
   opacity: 0;
+  color: #fff;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
 }
-.card:hover {
-  box-shadow: none;
+.card-img-overlay > * {
+  padding-bottom: 1.5rem;
 }
-.card-img-overlay:hover {
-  opacity: 1;
-  background: rgb(0, 0, 0, 0.5);
-  color: #fff;
+.card-text {
+  font-size: 1.5rem;
 }
 .card-link {
   color: #fff;
   font-weight: 800;
   background: var(--red);
   padding: 1rem;
-  transition: transform 0.2s;
   border-radius: 5%;
+}
+.card:hover {
+  box-shadow: none;
+}
+.card-img-overlay:hover {
+  opacity: 1;
+  background: rgb(0, 0, 0, 0.8);
 }
 .card-link:hover {
   color: #fff;
-  transform: scale(1.1);
+}
+/* CONTACT  */
+.contact {
+  font-size: 1.8rem;
+}
+#formBasicEmail {
+  font-size: 1.4rem;
+}
+.btn {
+  font-size: 1.8rem;
+  margin-top: 2rem;
+  padding: 0.8rem;
+}
+.resume {
+  margin: 5rem;
+}
+.resume-link {
+  font-size: 1.4rem;
+  padding: 1rem;
+  background: var(--red);
+  border-radius: 0.5rem;
+  color: #fff;
+  text-decoration: none;
+}
+.resume-link:hover {
+  text-decoration: none;
+  color: var(--red);
+  border: 0.15rem solid var(--red) !important;
+  background: #fff;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 320px) and (max-width: 600px) {
+  .App {
+    margin: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    font-size: 1.3rem;
+  }
+  .section-title {
+    margin-top: 5rem;
+    font-size: 2.2rem;
+  }
+  .icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .icon:hover {
+    color: var(--red);
+  }
+  .home-main {
+    height: 100vh;
+  }
+  .main-text {
+    font-size: 5em;
+  }
+  .sub-text-italics {
+    font-size: 1.1rem;
+  }
+  .sub-text {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 1.5rem;
+  }
+  .about-me {
+    text-align: justify;
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  .skills-icon {
+    font-size: 1rem;
+  }
+  .skill {
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+  }
+  .skill-title {
+    font-size: 1.8rem;
+  }
+  .skill-items {
+    font-size: 1.2rem;
+  }
+  .card {
+    margin: 1rem;
+    padding: 2rem;
+    width: 25rem;
+    height: 25rem;
+  }
+  .sub-heading {
+    font-size: 2.2rem;
+  }
+  .contact {
+    font-size: 1.4rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+  .resume-link {
+    font-size: 1.1rem;
+  }
 }
