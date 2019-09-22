@@ -24,7 +24,7 @@ export default function Skills() {
         <Row className="skills-section d-flex flex-column align-items-center justify-content-center">
           <h1 className="section-title mb-5 align-self-start">My skills...</h1>
           <Col className="skill">
-            <p className="skill-title">Languages:</p>
+            <p className="skill-title">Technologies/Languages:</p>
             <p className="skill-items">
               <FontAwesomeIcon className="skills-icon html" icon={faHtml5} />{" "}
               HTML5,
@@ -32,10 +32,11 @@ export default function Skills() {
                 className="skills-icon css"
                 icon={faCss3Alt}
               />{" "}
-              CSS3,
+              CSS3/SASS,
               <FontAwesomeIcon className="skills-icon js" icon={faJs} />{" "}
               JavaScript
             </p>
+            <p className="skill-items">ECMAScript (ES6-ES10)</p>
           </Col>
           <Col className="skill">
             <p className="skill-title">Libraries/Frameworks:</p>
