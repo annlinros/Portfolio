@@ -44,7 +44,11 @@ export default function Contact() {
         </Row>
         {/* Resume link */}
         <Container className="resume">
-          <a className="resume-link text-center" href="" download>
+          <a
+            className="resume-link text-center"
+            href="img/Anna_Nidhin_Resume.pdf"
+            target="_blanc"
+          >
             VIEW RESUME
           </a>
         </Container>
