@@ -123,8 +123,18 @@ body {
 .skill-items {
   font-size: 1.8rem;
 }
+/* MAIN PROJECTS */
+.main-projects-card {
+  width: 70rem;
+  height: 35vh;
+  margin-bottom: 1.5rem;
+}
+.main-project-img {
+  width: 100%;
+  height: 100%;
+}
 /* PROJECTS */
-.card {
+.project-card {
   margin: 3rem;
   padding: 2.5rem;
   width: 35rem;
@@ -165,7 +175,7 @@ body {
 }
 .card-img-overlay:hover {
   opacity: 1;
-  background: rgb(0, 0, 0, 0.8);
+  background: rgb(0, 0, 0, 0.9);
 }
 .card-link:hover {
   color: #fff;
@@ -202,7 +212,13 @@ body {
 
 /* MEDIA QUERIES */
 
-@media (min-width: 320px) and (max-width: 600px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-projects-card {
+    width: 50rem;
+    height: 35rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 766px) {
   .App {
     margin: 0;
   }
@@ -255,11 +271,19 @@ body {
   .skill-items {
     font-size: 1.2rem;
   }
-  .card {
+  .main-projects-card {
+    margin-top: 3rem;
+    width: 35rem;
+    height: 30vh;
+  }
+  .project-card {
     margin: 1rem;
     padding: 2rem;
     width: 25rem;
     height: 25rem;
+  }
+  .card-text {
+    font-size: 1rem;
   }
   .sub-heading {
     font-size: 2.2rem;

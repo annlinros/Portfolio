@@ -7,6 +7,7 @@ import About from "./Components/About/About";
 import Skills from "./Components/Skills";
 import Contact from "./Components/Contact";
 import Projects from "./Components/Projects";
+import MainProjects from "./Components/MainProjects";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/skills" component={Skills}>
           <Skills />
+        </Route>
+        <Route path="/mainprojects" component={MainProjects}>
+          <MainProjects />
         </Route>
         <Route path="/projects" component={Projects}>
           <Projects />

@@ -17,7 +17,7 @@ export default function Navigation() {
           <Nav.Link eventKey="1" as={Link} to="/skills">
             Skills
           </Nav.Link>
-          <Nav.Link eventKey="1" as={Link} to="/projects">
+          <Nav.Link eventKey="1" as={Link} to="/mainprojects">
             Projects
           </Nav.Link>
           <Nav.Link eventKey="1" as={Link} to="/contact">
