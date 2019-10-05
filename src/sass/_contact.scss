@@ -1,0 +1,30 @@
+/* CONTACT  */
+@mixin resumeLink($background, $color) {
+  background: $background;
+  color: $color;
+}
+.contact,
+.btn {
+  font-size: 1.8rem;
+}
+#formBasicEmail {
+  font-size: 1.4rem;
+}
+.btn {
+  margin-top: 2rem;
+  padding: 0.8rem;
+}
+.resume {
+  margin: 5rem;
+  .resume-link {
+    font-size: 1.4rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    @include resumeLink(var(--red), #fff);
+  }
+  .resume-link:hover {
+    @include resumeLink(#fff, var(--red));
+    border: 0.15rem solid var(--red) !important;
+    text-decoration: none;
+  }
+}

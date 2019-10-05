@@ -1,0 +1,39 @@
+/* SKILLS PAGE */
+.html {
+  color: #f16529;
+}
+.css {
+  color: #264de4;
+}
+.js {
+  color: #f0db4f;
+}
+.bootstrap {
+  color: #9933cc;
+}
+.react {
+  color: #61dbfb;
+}
+.npm {
+  color: #c60021;
+}
+.skills-icon {
+  font-size: 3rem;
+}
+.skill {
+  text-align: left;
+  background: #fff;
+  margin-bottom: 2rem;
+  padding: 1.8rem;
+  transition: transform 0.1s;
+  &:hover {
+    transform: scale(1.02);
+  }
+  .skill-title {
+    color: var(--red);
+    font-size: 2rem;
+  }
+  .skill-items {
+    font-size: 1.8rem;
+  }
+}

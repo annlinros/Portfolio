@@ -1,0 +1,17 @@
+/* NAVIGATION */
+.navbar {
+  background: #fff;
+  height: 8rem;
+  font-size: 2rem;
+  padding: 0%;
+  z-index: 1;
+  .navbar-toggler {
+    margin: 2rem;
+  }
+  #responsive-navbar-nav {
+    background: #fff;
+  }
+  .nav-link:hover {
+    color: var(--red) !important;
+  }
+}

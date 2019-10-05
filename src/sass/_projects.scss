@@ -1,0 +1,56 @@
+@mixin elementSize($width, $height) {
+  width: $width;
+  height: $height;
+}
+/* MAIN PROJECTS */
+.main-projects-card {
+  @include elementSize(70rem, 35vh);
+  margin-bottom: 2rem;
+  .main-project-img {
+    @include elementSize(100%, 100%);
+  }
+}
+/* PROJECTS */
+.project-card {
+  @include elementSize(35rem, 35rem);
+  margin: 3rem;
+  padding: 2.5rem;
+  box-shadow: 0 0.7rem 0.4rem -0.6rem black;
+  &:hover {
+    box-shadow: none;
+  }
+}
+.card-img-top {
+  @include elementSize(100%, 100%);
+  object-fit: cover;
+}
+
+.card-img-overlay {
+  opacity: 0;
+  color: #fff;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.9);
+  }
+  & > * {
+    padding-bottom: 1.5rem;
+  }
+}
+
+.card-text {
+  font-size: 1.5rem;
+}
+.card-link {
+  color: #fff;
+  font-weight: 800;
+  background: var(--red);
+  padding: 1rem;
+  border-radius: 5%;
+  &:hover {
+    color: #fff;
+  }
+}

@@ -1,0 +1,25 @@
+/* HOME PAGE */
+.icon {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: #868e96;
+  &:hover {
+    color: var(--red);
+  }
+}
+.home-main {
+  height: 100vh;
+  background: var(--grey);
+  padding: 5rem;
+  .main-text {
+    font-size: 8em;
+  }
+  .sub-text-italics {
+    font-size: 1.8rem;
+  }
+  .sub-text {
+    color: var(--red);
+    font-weight: 400;
+    font-size: 2rem;
+  }
+}

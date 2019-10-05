@@ -1,0 +1,90 @@
+/* IMPORT PARTIALS */
+@import "./navbar";
+@import "./home";
+@import "./skills";
+@import "./projects";
+@import "./contact";
+:root {
+  --red: #c60021;
+  --grey: #e3e3e3;
+  font-size: 62.5%;
+}
+body {
+  background: var(--grey);
+}
+.App {
+  margin: 8rem 0 0 8rem;
+  text-align: center;
+  font-family: "Headland One", serif;
+}
+/* GENERAL STYLING */
+.home,
+.about,
+.contact,
+.skills,
+.projects {
+  padding: 0%;
+}
+.sidebar {
+  @include elementSize(8rem, 100vh);
+  background: #fff;
+}
+
+.section-title {
+  font-size: 3.8rem;
+}
+
+/* ABOUT */
+.about-me {
+  padding: 5rem;
+  text-align: justify;
+  font-size: 1.8rem;
+  margin: 0%;
+}
+
+/* MEDIA QUERIES */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-projects-card {
+    @include elementSize(55rem, 38rem);
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .App {
+    margin: 0;
+  }
+  .sidebar {
+    display: none;
+  }
+  .navbar {
+    font-size: 1.3rem;
+  }
+  .main-text {
+    font-size: 5rem !important;
+  }
+  .section-title {
+    margin-top: 5rem;
+  }
+  .icon {
+    font-size: 3rem;
+    margin: 1rem;
+  }
+  .about-me {
+    font-size: 1.4rem;
+    padding: 2rem;
+  }
+  .skill {
+    width: 90vw;
+  }
+  .main-projects-card {
+    @include elementSize(35rem, 20rem);
+  }
+  .project-card {
+    margin: 1rem;
+    padding: 2rem;
+  }
+  .card-text {
+    font-size: 1.3rem;
+  }
+}
