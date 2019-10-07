@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faCodepen,
-  faLinkedinIn
+  faXing
 } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 
@@ -22,7 +22,7 @@ export default function Home() {
             href="https://www.xing.com/profile/Anna_Nidhin/cv"
             target="_blanc"
           >
-            <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
+            <FontAwesomeIcon className="icon" icon={faXing} />
           </Nav.Link>
         </Nav>
       </Navbar>
