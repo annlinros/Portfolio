@@ -19,7 +19,7 @@ export default function Home() {
             <FontAwesomeIcon className="icon" icon={faCodepen} />
           </Nav.Link>
           <Nav.Link
-            href="https://www.linkedin.com/in/anna-nidhin-2912046b/"
+            href="https://www.xing.com/profile/Anna_Nidhin/cv"
             target="_blanc"
           >
             <FontAwesomeIcon className="icon" icon={faLinkedinIn} />
